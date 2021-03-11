@@ -1,4 +1,4 @@
-function intersect(nums1: number[], nums2: number[]): object {
+function intersect(nums1: number[], nums2: number[]): number[]{
   let n1 = nums1;
   let n2 = nums2;
 
@@ -6,6 +6,7 @@ function intersect(nums1: number[], nums2: number[]): object {
     n1 = nums2;
     n2 = nums1;
   }
+
   const dups: {
     [key: number]: number
   } = {}
@@ -18,4 +19,3 @@ function intersect(nums1: number[], nums2: number[]): object {
     return exists;
   })
 }
-
